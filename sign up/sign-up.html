@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tech</title>
+    <link rel="stylesheet" href="sign-up.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="HealthTech Logo">
+            <h2>HealthTech</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="../appointment.html">Appointment</a></li>
+                <li><a href="../result.html">Results</a></li>
+                <li><a href="../education.php">Education</a></li>
+                <li><a href="../detail.html">Details</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+        </nav>
+        <a href="sign-up.html" class="get-started">Sign Up</a>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="cont-text">
+                <h2>Track Your Health Condition & More!</h2>
+                <h5>Start your health care journey today.</h5>
+            </div>
+
+            <form action="../register.php" method="POST"> <!-- Change action to your PHP file -->
+                <div class="fr-name">
+                    <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+                </div>
+
+                <div class="ls-name">
+                    <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
+                </div>
+                
+                <div class="email">
+                    <input type="tel" name="national_id" id="national_id" placeholder="National ID" maxlength="14" minlength="14" required>
+                </div>
+
+                <div class="phone">
+                    <input type="tel" name="phone_number" id="phone_number" placeholder="Phone Number" required>
+                </div>
+
+                <div class="email">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="pass">
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+
+                <div class="cont-for">
+                    <div class="keep-log">
+                        <input type="checkbox" name="notifications" id="keep">
+                        <label for="keep">Send me email notifications for my next appointment</label>
+                    </div>
+                </div>
+                <div class="log-in">
+                    <input type="submit" value="Create account">
+                </div>
+            </form>
+            <div class="doctor-img">
+                <img src="../images/doctor-sign_up.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
